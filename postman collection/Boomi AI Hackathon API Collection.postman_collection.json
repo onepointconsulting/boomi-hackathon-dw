@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "9bee094c-8b54-481c-8e76-d34ad634f297",
+		"name": "Boomi AI Hackathon API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3732512"
+	},
+	"item": [
+		{
+			"name": "Query Init Session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"language\":\"en\",\"email\":\"test@gmail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://c01-gbr.integrate-test.boomi.com/ws/simple/queryInitSession",
+					"protocol": "https",
+					"host": [
+						"c01-gbr",
+						"integrate-test",
+						"boomi",
+						"com"
+					],
+					"path": [
+						"ws",
+						"simple",
+						"queryInitSession"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Ask Clarification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"session\": \"4261418492060141017\",\r\n\"step_number\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://c01-gbr.integrate-test.boomi.com/ws/simple/queryAskClarification",
+					"protocol": "https",
+					"host": [
+						"c01-gbr",
+						"integrate-test",
+						"boomi",
+						"com"
+					],
+					"path": [
+						"ws",
+						"simple",
+						"queryAskClarification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upsert User Answer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"session\": \"4261418492060141018\",\r\n\"step_number\":1,\r\n\"user_message\":\"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://c01-gbr.integrate-test.boomi.com/ws/simple/upsertUserAnswer",
+					"protocol": "https",
+					"host": [
+						"c01-gbr",
+						"integrate-test",
+						"boomi",
+						"com"
+					],
+					"path": [
+						"ws",
+						"simple",
+						"upsertUserAnswer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upsert Final Report",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"session\": \"4261418492060141018\",\r\n\"step_number\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://c01-gbr.integrate-test.boomi.com/ws/simple/upsertFinalReport",
+					"protocol": "https",
+					"host": [
+						"c01-gbr",
+						"integrate-test",
+						"boomi",
+						"com"
+					],
+					"path": [
+						"ws",
+						"simple",
+						"upsertFinalReport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Report Email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"session\": \"4261418492060141018\",\r\n\"step_number\":1,\r\n\"username\":\"test\",\r\n\"email\":\"test@test.test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://c01-gbr.integrate-test.boomi.com/ws/simple/queryReportEmail",
+					"protocol": "https",
+					"host": [
+						"c01-gbr",
+						"integrate-test",
+						"boomi",
+						"com"
+					],
+					"path": [
+						"ws",
+						"simple",
+						"queryReportEmail"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "7847140a-c18f-4fb0-baee-1431ddd521bb",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "tpponepointconsultingltd5-LV11SA.YOB3W6",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
