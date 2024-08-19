@@ -68,7 +68,7 @@ CREATE TABLE public.user_questions(
  user_answer TEXT,
  confidence_level public.enum_confidence_level,
  rational TEXT,
- question_clarification TEXT[],
+ question_clarification TEXT,
  recommendations TEXT[],
  avoidance TEXT[],
  outcomes TEXT[],
