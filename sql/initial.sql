@@ -64,7 +64,7 @@ CREATE TABLE public.user_questions(
  session TEXT not null,
  step_number INTEGER not null,
  question TEXT not null,
- suggestions JSON not null,
+ suggestions JSON null,
  user_answer TEXT,
  confidence_level public.enum_confidence_level,
  rational TEXT,
